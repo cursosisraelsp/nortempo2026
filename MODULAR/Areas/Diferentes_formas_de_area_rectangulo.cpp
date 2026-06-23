@@ -49,13 +49,15 @@ void AreaRectangulo2(){
     
     string mensaxe;
     
-    mensaxe = "Introduce a altura do rectangulo: ";
     // PROGRAMA
-    
+    // 1º Aproveitamos que a variable mensaxe pode cambiar de valor
+    // Polo que inicialmente introducimos --> "Introduce a altura do rectangulo: "
+    mensaxe = "Introduce a altura do rectangulo: ";
     cout << mensaxe;
     cin >> alturaRectangulo;
     
-    // cout << "Introducín a altura do rectangulo: " << alturaRectangulo;
+    // 2º Aproveitamos que a variable mensaxe pode cambiar de valor
+    // Polo que inicialmente introducimos --> "Introduce a base do rectangulo: "
     mensaxe = "Introduce a base do rectangulo: ";
     cout << mensaxe;
     cin >> baseRectangulo;
