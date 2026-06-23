@@ -3,7 +3,6 @@
 
 #include<iostream>
 #include <cmath> // Librería para la función pow(), sqrt()
-#include <numbers>
 #define PI 3.1416       // Define una constante de texto
 
 
