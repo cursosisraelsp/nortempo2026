@@ -20,7 +20,7 @@ int main()
    } 
  
    // Write data to the file 
-   std::string strText = "Otra cosita"; // For C use LPSTR (char*) or LPWSTR (wchar_t*) 
+   std::string strText = "Outro texto"; // For C use LPSTR (char*) or LPWSTR (wchar_t*) 
    DWORD bytesWritten; 
    WriteFile( 
       hFile,            // Handle to the file 
