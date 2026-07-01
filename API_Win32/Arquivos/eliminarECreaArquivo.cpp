@@ -1,8 +1,13 @@
 #include <Windows.h> 
 #include <string> 
- 
+#include <iostream>
+
 int main() 
 { 
+    // Elimina o arquivo
+    if (DeleteFile(TEXT("C:\\NewFile.txt"))) {
+        std::cout << "Archivo eliminado con exito." << std::endl;
+    }
    // Open a handle to the file 
    HANDLE hFile = CreateFile( 
       "C:\\NewFile.txt",     // Filename 
@@ -20,7 +25,7 @@ int main()
    } 
  
    // Write data to the file 
-   std::string strText = "Hoxe é un bo día"; // For C use LPSTR (char*) or LPWSTR (wchar_t*) 
+   std::string strText = "Hoxe é 01/07/2026"; // For C use LPSTR (char*) or LPWSTR (wchar_t*) 
    DWORD bytesWritten; 
    WriteFile( 
       hFile,            // Handle to the file 
